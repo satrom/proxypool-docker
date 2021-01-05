@@ -96,7 +96,6 @@ RUN set -eux \
    && ln -sf /usr/share/zoneinfo/${TZ} /etc/localtime \
    # 更新时间
    && echo ${TZ} > /etc/timezone
-
 	
 # 拷贝proxypool
 COPY --from=0 /src/bin/proxypool-docker /usr/bin/proxypool
@@ -109,7 +108,6 @@ RUN set -eux && \
 # 增加配置文件
 COPY ./conf/proxypool/config.yaml /etc/proxypool/config.yaml
 COPY ./conf/proxypool/source.yaml /etc/proxypool/source.yaml
-
 
 # 安装dumb-init
 RUN set -eux \
