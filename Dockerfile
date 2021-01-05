@@ -105,7 +105,7 @@ COPY --from=0 /src/assets /usr/bin/assets
 RUN set -eux && \
     mkdir -p /etc/proxypool && \
     chmod +x /usr/bin/proxypool && \
-    chmod -R 775 assets /usr/bin/assets
+    chmod -R 775 /usr/bin/assets
 
 # 增加配置文件
 COPY ./conf/proxypool/config.yaml /etc/proxypool/config.yaml
