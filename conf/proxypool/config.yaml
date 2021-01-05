@@ -1,5 +1,5 @@
 # your domain
-domain: 127.0.0.1
+domain: proxypool.danxiaonuo.workers.dev
 port:  12580
 
 # source list file
