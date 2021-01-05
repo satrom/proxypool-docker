@@ -99,15 +99,18 @@ RUN set -eux \
 	
 # 拷贝proxypool
 COPY --from=0 /src/bin/proxypool-docker /usr/bin/proxypool
+COPY --from=0 /src/assets /usr/bin/assets
 
 # 授予文件权限
 RUN set -eux && \
     mkdir -p /etc/proxypool && \
-    chmod +x /usr/bin/proxypool
+    chmod +x /usr/bin/proxypool && \
+    chmod -R 775 assets /usr/bin/assets
 
 # 增加配置文件
 COPY ./conf/proxypool/config.yaml /etc/proxypool/config.yaml
 COPY ./conf/proxypool/source.yaml /etc/proxypool/source.yaml
+
 
 # 安装dumb-init
 RUN set -eux \
