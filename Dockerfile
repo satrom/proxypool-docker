@@ -96,21 +96,23 @@ RUN set -eux \
    && ln -sf /usr/share/zoneinfo/${TZ} /etc/localtime \
    # 更新时间
    && echo ${TZ} > /etc/timezone
-	
+
+# 工作目录
+WORKDIR /proxypool-src
+
 # 拷贝proxypool
-COPY --from=0 /src/bin/proxypool-docker /usr/bin/proxypool
-COPY --from=0 /src/assets /usr/bin/assets
+COPY --from=0 /src/bin/proxypool-docker /proxypool-src/proxypool
+COPY --from=0 /src/assets /proxypool-src/assets
 
 # 授予文件权限
 RUN set -eux && \
-    mkdir -p /etc/proxypool && \
-    chmod +x /usr/bin/proxypool && \
-    chmod -R 775 /usr/bin/assets
+    mkdir -p /proxypool-src/conf/proxypool && \
+    chmod +x /proxypool-src/proxypool && \
+    chmod -R 775 /proxypool-src
 
 # 增加配置文件
-COPY ./conf/proxypool/config.yaml /etc/proxypool/config.yaml
-COPY ./conf/proxypool/source.yaml /etc/proxypool/source.yaml
-
+COPY ./conf/proxypool/config.yaml /proxypool-src/conf/proxypool/config.yaml
+COPY ./conf/proxypool/source.yaml /proxypool-src/conf/proxypool/source.yaml
 
 # 安装dumb-init
 RUN set -eux \
@@ -124,4 +126,4 @@ STOPSIGNAL SIGQUIT
 ENTRYPOINT ["dumb-init"]
 
 # 运行proxypool
-CMD ["proxypool", "-c", "/etc/proxypool/config.yaml"]
+CMD ["/proxypool-src/proxypool", "-c", "/proxypool-src/conf/proxypool/config.yaml", "-d"]
