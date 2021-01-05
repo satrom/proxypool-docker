@@ -5,7 +5,7 @@ port:  12580
 # source list file
 source-files:
   # use local file
-  - /etc/proxypool/source.yaml
+  - /proxypool-src/conf/proxypool/source.yaml
   # use web file
   # - https://example.com/config/source.yaml
 
