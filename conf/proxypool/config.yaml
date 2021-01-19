@@ -7,7 +7,7 @@ source-files:
   # use local file
   - /proxypool-src/conf/proxypool/source.yaml
   - /proxypool-src/conf/proxypool/source1.yaml
-  - /proxypool-src/conf/proxypool/source.yaml
+  - /proxypool-src/conf/proxypool/source2.yaml
   # use web file
   # - https://example.com/config/source.yaml
 
