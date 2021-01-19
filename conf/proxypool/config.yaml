@@ -1,5 +1,6 @@
 # your domain
 domain: pter.ml
+port:
 
 # source list file
 source-files:
@@ -7,7 +8,6 @@ source-files:
   - /proxypool-src/conf/proxypool/source.yaml
   # use web file
   # - https://example.com/config/source.yaml
-  - https://raw.githubusercontent.com/satrom/proxypool/master/config/source.yaml
   - https://raw.githubusercontent.com/Alex950808/proxypool038/master/config/source.yaml
   - https://raw.githubusercontent.com/wishcaiji/proxypool/master/config/source.yaml
   - https://raw.githubusercontent.com/money-fly/proxypool/master/config/source.yaml
