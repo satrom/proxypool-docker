@@ -1,6 +1,5 @@
 # your domain
 domain: pter.ml
-port: 443
 
 # source list file
 source-files:
