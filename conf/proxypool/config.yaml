@@ -5,10 +5,10 @@ port:                 # default 12580
 # source list file
 source-files:
   # use local file
-  - ./config/source.yaml
-  - ./config/source-web.yaml
-  - ./config/source-fqw.yaml
-  - ./config/source-tg.yaml
+  - /proxypool-src/conf/proxypool/source.yaml
+  - /proxypool-src/conf/proxypool/source-web.yaml
+  - /proxypool-src/conf/proxypool/source-fqw.yaml
+  - /proxypool-src/conf/proxypool/source-tg.yaml
   # use web file
   # - https://example.com/config/source.yaml
 
