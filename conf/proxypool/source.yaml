@@ -1,68 +1,25 @@
 # 模糊抓取订阅链接
 - type: webfuzzsub
   options:
-    url: https://raw.githubusercontent.com/du5/free/master/sub.list
+    url: 
 
 # 订阅链接
 - type: subscribe
   options:
-    url: https://raw.githubusercontent.com/ssrsub/ssr/master/v2ray
-- type: subscribe
-  options:
-    url: https://raw.githubusercontent.com/satrom/V2SSR/master/V2RAY/Sub.txt
-- type: subscribe
-  options:
-    url: https://raw.githubusercontent.com/satrom/V2SSR/master/SSR/Sub.txt
-- type: subscribe
-  options:
-    url: https://raw.githubusercontent.com/satrom/V2SSR/master/SSR/Day.txt 
-- type: subscribe
-  options:
-    url: https://raw.githubusercontent.com/satrom/V2SSR/master/SS/Sub.txt 
-- type: subscribe
-  options:
-    url: https://www.vtworay.com/modules/servers/V2raySocks/osubscribe.php?sid=5063&token=cG4CsQNoHcQs
+    url: 
     
 # 网页模糊抓取
 - type: webfuzz
   options:
-    url: https://merlinblog.xyz/wiki/freess.html
+    url: 
 
 # tg频道抓取
 - type: tgchannel
   options:
-    channel: bhsghost
-    num: 200
-- type: tgchannel
-  options:
-    channel: sharecentre
-    num: 200
-- type: tgchannel
-  options:
-    channel: fproxies
+    channel: 
     num: 200
 
 # 翻墙党，后面的东西都无需修改
-- type: web-fanqiangdang
-  options:
-    url: https://fanqiangdang.com/forum.php?mod=rss&fid=50&auth=0
-    num: 200
-- type: web-fanqiangdang
-  options:
-    url: https://fanqiangdang.com/forum.php?mod=rss&fid=2&auth=0
-    num: 200
-- type: web-fanqiangdang
-  options:
-    url: https://fanqiangdang.com/forum.php?mod=rss&fid=36&auth=0
-    num: 200
-- type: web-fanqiangdang
-  options:
-    url: https://fanqiangdang.com/forum.php?mod=rss&fid=51&auth=0
-    num: 200
-- type: web-fanqiangdan
-  options:
-    url: https://fanqiangdang.com/forum.php?mod=rss&fid=48&auth=0
-    num: 200
 - type: web-fanqiangdang
   options:
     url: https://fanqiangdang.com/forum-48-1.html
@@ -70,12 +27,9 @@
 # clash格式订阅链接
 - type: clash
   options:
-    url: https://gitea.com/proxypools/sub/raw/branch/main/clash/clashs.yaml
-- type: clash
-  options:
-    url: https://suo.yt/qarTaop
+    url: 
 
 # 某个网站抓取
 - type: web-freessrxyz
   options:
-    url: https://lightyearapp.life/zh/free-vpn
+    url: 
