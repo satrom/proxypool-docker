@@ -5,9 +5,6 @@ domain: example.com
 source-files:
   # use local file
   - /proxypool-src/conf/proxypool/source.yaml
-  - /proxypool-src/conf/proxypool/source-web.yaml
-  - /proxypool-src/conf/proxypool/source-fqw.yaml
-  - /proxypool-src/conf/proxypool/source-tg.yaml
   # use web file
   # - https://example.com/config/source.yaml
 
