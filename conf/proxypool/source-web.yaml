@@ -1,0 +1,9 @@
+# 模糊抓取订阅链接
+- type: webfuzzsub
+  options:
+    url: 
+
+# 网页模糊抓取
+- type: webfuzz
+  options:
+    url: 
