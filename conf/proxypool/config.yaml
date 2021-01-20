@@ -1,13 +1,14 @@
 # your domain
-domain: pter.ml
-port: 443
+domain: example.com
+port:                 # default 12580
 
 # source list file
 source-files:
   # use local file
-  - /proxypool-src/conf/proxypool/source.yaml
-  - /proxypool-src/conf/proxypool/source1.yaml
-  - /proxypool-src/conf/proxypool/source2.yaml
+  - ./config/source.yaml
+  - ./config/source-web.yaml
+  - ./config/source-fqw.yaml
+  - ./config/source-tg.yaml
   # use web file
   # - https://example.com/config/source.yaml
 
@@ -22,13 +23,13 @@ crontime:             # v0.4.x default 60 (minutes). Deprecated in the newest ve
 
 # speed test
 speedtest: true         # default false. Warning: this will consume large network resources.
-speedtest-interval: 15  # default 720 (min)
+speedtest-interval: 10  # default 720 (min)
 connection:             # default 5. The number of speed test connections simultaneously
 timeout:                # default 10 (seconds).
 ## active proxy speed test
-active-interval: 10     # default 60 (min)
-active-frequency:       # default 100 (requests per interval)
-active-max-number:      # default 100. If more than this number of active proxies, the extra will be deprecated by speed
+active-interval: 15   # default 60 (min)
+active-frequency:     # default 100 (requests per interval)
+active-max-number:    # default 100. If more than this number of active proxies, the extra will be deprecated by speed
 
 # cloudflare api
 cf_email: ""
