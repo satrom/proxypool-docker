@@ -113,6 +113,9 @@ RUN set -eux && \
 # 增加配置文件
 COPY ./conf/proxypool/config.yaml /proxypool-src/conf/proxypool/config.yaml
 COPY ./conf/proxypool/source.yaml /proxypool-src/conf/proxypool/source.yaml
+COPY ./conf/proxypool/source-web.yaml /proxypool-src/conf/proxypool/source-web.yaml
+COPY ./conf/proxypool/source-fqw.yaml /proxypool-src/conf/proxypool/source-fqw.yaml
+COPY ./conf/proxypool/source-tg.yaml /proxypool-src/conf/proxypool/source-tg.yaml
 
 # 安装dumb-init
 RUN set -eux \
