@@ -22,7 +22,7 @@
 # 翻墙党，后面的东西都无需修改
 - type: web-fanqiangdang
   options:
-    url: https://fanqiangdang.com/forum-48-1.html
+    url: 
 
 # clash格式订阅链接
 - type: clash
